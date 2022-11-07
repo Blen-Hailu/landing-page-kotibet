@@ -1,13 +1,6 @@
 import {useState} from 'react';
-//import useLocalStorageState from 'use-local-storage-state';
 
-function BasicForm(){
-
-/* const [fullName, setFullName] =useLocalStorageState(
-    'text',
-    {defaultValue: ""}
-    );
- */
+function BasicForm(){ 
 
   const [fullName, setFullName] =useState('')
 
@@ -32,9 +25,6 @@ function BasicForm(){
 
   };
 
-  
-
-
   return (
     <div>
         <form onSubmit={handleSubmit}>
@@ -55,7 +45,7 @@ function BasicForm(){
               onChange={handleEmailChange}
               value={email}
             />
-            <label for="role"> Choose a role</label>
+            <label htmlFor="role"> Choose a role</label>
             <input
               type="text"
               name="role"
@@ -77,27 +67,3 @@ function BasicForm(){
   )
 }
 export default BasicForm;
-
-
-
-
-/* function Forms (){
-
-const { register, handleSubmit, errors} = useForm()
-
-const onSubmit = (data) => {
-  console.log(data)
-}
-return (
-  <form onSubmit={handleSubmit(onSubmit)}>
-    <input type = "text" placeholder = "Name" name= "name" ref={register}/>
-    <input type = "text" placeholder = "Email" name= "email" ref={register({required: true})}/>
-    {errors.email && <p> Email required</p>}
-    <input type = "submit"/>
-
-  </form>
-)
-} 
-export default Forms; */
-
-
