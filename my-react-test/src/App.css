@@ -1,0 +1,207 @@
+.App {
+  text-align: center;
+}
+.nav{
+  background-color: darkslategray;
+  color: beige;
+  display:flex;
+  justify-content : space-between;
+  align-items: center;
+  gap: 2rem;
+  padding:0 1rem;
+  height: 100px;
+}
+.home-title{
+  font-size:xx-large;
+  font-weight: 400;
+  display: flex;
+  align-self: center;
+}
+.nav ul{
+  padding:0;
+  margin:0;
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav a {
+color:inherit;
+text-decoration:none;
+height: 100%;
+display:flex;
+align-items:stretch;
+padding: .25rem
+}
+.nav li.active{
+  background-color:cadetblue;
+}
+.nav li:hover{
+  background-color:rgb(95, 224, 231);
+}
+.geninfo{
+  color: black;
+  font-weight: 400;
+  font-family: monospace;
+  font-size:xx-large;
+  padding-top:10%;
+  padding-right:15% ;
+  padding-left: 10%;
+  text-align:start;
+  flex-wrap: wrap;
+}
+.halfpage{
+  flex-direction: row;
+  background-color: darkcyan;
+  padding-top:15%;
+  padding-right:15% ;
+  padding-left: 10%;
+}
+.FormBorder{
+  background-color: rgb(84, 133, 135);
+  border-radius: 7%;
+  block-size: 30%;
+}
+.main-button{
+  font-size: large;
+  color:rgb(11, 14, 14);
+  border:none;
+  background-color: rgb(68, 173, 144);
+  padding: 10px;
+  border-radius: 10px;
+  margin:20%;
+}
+.subscribebutton{
+  font-size: larger;
+  color:rgb(11, 14, 14);
+  border: 10px;
+  border-color: black;
+  background-color: cadetblue;
+  border-radius: 10px;
+  margin-left: 10%;
+}
+.Freelanceremail{
+  display:flex;
+  align-items: flex-start;
+  background-color: rgb(36, 94, 58);
+  border:none;
+  color:black
+}
+.pagelayout{
+  display:flex;
+}
+.tocontact{
+  display: flex;
+  align-self: center;
+  font: size 2px;;
+  color: rgb(7, 7, 22);
+  background-color: rgb(118, 126, 119);
+  border-radius: 5%;
+}
+.footer{
+  background-color: darkslategray;
+  color: beige;
+  display:flex;
+  justify-content : space-between;
+  align-items: center;
+  gap: 2rem;
+  padding:0 1rem;
+  height: 100px;
+}
+.footer ul{
+  padding:0;
+  margin:0;
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+.footer a{
+color:inherit;
+text-decoration:none;
+height: 100%;
+display:flex;
+align-items:stretch;
+padding: .25rem
+}
+.nav li.active{
+  background-color:cadetblue;
+}
+.nav li.hover{
+  background-color:rgb(95, 224, 231);
+}
+.mail-form{
+display:flex;
+flex-direction:row;
+flex-wrap:wrap;
+align-self: center;
+text-align: start;
+color: rgb(7, 7, 22);
+background-color: rgb(118, 126, 119);
+border-radius: 5%;
+}
+
+/*CSS style taken from https://freefrontend.com/css-reveal-animations/
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:700);
+
+.container {
+  max-width: 360px;
+  margin: 90px auto;
+}
+h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 110px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  line-height: 1;
+  color: #013a52;
+  font-family: 'Roboto Condensed', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  transform-origin: center bottom;
+  transition: all 0.4s;
+}
+h2:first-of-type {
+  transform-origin: left top;
+}
+.container:hover h2 {
+  transform: scaleY(0);
+}
+.text {
+  position:absolute;
+  top: 50%;
+  right: 52%;
+  left: 0;
+  font-family: 'Open Sans';
+  transform: translateY(-50%);
+  transition: all 0.5s;
+}
+.text:before, .text:after {
+  display: block;
+  margin: 50px 0;
+  height: 10px;
+  opacity: 0.75;
+  content: '';
+  transition: all 0.3s;
+}
+.text:hover {
+  background: rgb(223, 173, 173);
+}
+.text:hover:before, .text:hover:after {
+  margin: 10;
+}
+.inner {
+  padding: 0 60px;
+  max-height: 0;
+  overflow: hidden;
+  background: white;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  transform: scale(0);
+  transition: all 0.3s;
+}
+.container:hover .inner {
+  padding: 60px;
+  max-height: 300px;
+  transform: scale(1);
+}
