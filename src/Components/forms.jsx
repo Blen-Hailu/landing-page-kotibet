@@ -29,7 +29,7 @@ function BasicForm(){
     <div>
         <form onSubmit={handleSubmit}>
           <div>
-            <label>Full Name</label>
+            <label>Full</label>
             <input
               type="text"
               name="fullName"
